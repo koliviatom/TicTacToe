@@ -5,13 +5,24 @@ import java.lang.*;
 
 public class Board {
 
-    char[][] gameBoard;
+    private char[][] gameBoard;
 
     public Board() {
-        char[][] gameBoard = new char[3][3];
+        gameBoard = new char[3][3];
     }
 
     public char[][] getGameBoard() {
+        return gameBoard;
+    }
+
+    public boolean isSpaceOccupied(int row, int col) {
+        if (gameBoard[row][col] == 'x' || gameBoard[row][col] == 'o')
+            return true;
+        return false;
+    }
+
+    public char[][] updateBoard(int row, int col, char marker) {
+        gameBoard[row][col] = marker;
         return gameBoard;
     }
 
@@ -28,5 +39,5 @@ public class Board {
         }
         return false;
     }
-    
+
 }
