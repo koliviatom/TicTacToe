@@ -11,5 +11,23 @@ public class GamePlay {
         this.gameboard = board;
     }
 
+    public void swapPlayers() {
+        if(p1.getTurn()) {
+            p1.setTurn(false);
+            p2.setTurn(true);
+        } else {
+            p1.setTurn(true);
+            p2.setTurn(false);
+        }
+    }
+
+    public char getCurrentMarker() {
+        if (p1.getTurn())
+            return p1.getMarker();
+        if (p2.getTurn())
+            return p2.getMarker();
+        return 0;
+    }
+
 
 }
