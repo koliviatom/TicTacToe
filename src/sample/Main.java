@@ -11,7 +11,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
 
-        GridPane root = (GridPane)FXMLLoader.load(getClass().getResource("sample/gameView.fxml"));
+        GridPane root = (GridPane)FXMLLoader.load(getClass().getResource("gameView.fxml"));
         primaryStage.setTitle("Tic Tac Toe");
         primaryStage.setScene(new Scene(root, 500, 500));
         primaryStage.show();
