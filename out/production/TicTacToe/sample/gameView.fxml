@@ -53,7 +53,7 @@
       <Line endY="340.0" GridPane.columnIndex="4" GridPane.hgrow="NEVER" GridPane.rowIndex="1" GridPane.rowSpan="2147483647" GridPane.valignment="CENTER" />
       <Label fx:id="p1label" text="Player 1" GridPane.columnSpan="3" GridPane.halignment="CENTER">
          <font>
-            <Font name="System Bold" size="24.0" />
+            <Font size="24.0" />
          </font>
       </Label>
       <Label fx:id="p2label" text="Player 2" GridPane.columnIndex="3" GridPane.columnSpan="3" GridPane.halignment="CENTER">

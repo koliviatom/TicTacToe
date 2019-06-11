@@ -91,7 +91,19 @@ public class Controller {
             p2label.setText("LOSER!");
         }
         game.swapPlayers();
+        swapPlayerFocus();
     }
+
+    void swapPlayerFocus(){
+        if (playx.getTurn()) {
+            p1label.setStyle("-fx-font-weight: bold");
+            p2label.setStyle("-fx-font-weight: regular");
+        } else {
+            p1label.setStyle("-fx-font-weight: regular");
+            p2label.setStyle("-fx-font-weight: bold");
+        }
+    }
+
 
     /* Individual button handlers
     @FXML
