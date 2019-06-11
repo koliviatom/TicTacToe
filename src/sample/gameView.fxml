@@ -6,7 +6,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="sample.Controller">
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
   <columnConstraints>
       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -24,6 +24,7 @@
     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
   </rowConstraints>
    <children>
+       <!--
       <Button fx:id="but20" mnemonicParsing="false" onAction="#press20" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="5" />
       <Button fx:id="but10" mnemonicParsing="false" onAction="#press10" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="3" />
       <Button fx:id="but00" mnemonicParsing="false" onAction="#press00" text="Play Here" GridPane.columnIndex="1" GridPane.rowIndex="1" />
@@ -33,19 +34,30 @@
       <Button fx:id="but21" mnemonicParsing="false" onAction="#press21" text="Play Here" GridPane.columnIndex="3" GridPane.rowIndex="5" />
       <Button fx:id="but12" mnemonicParsing="false" onAction="#press12" text="Play Here" GridPane.columnIndex="5" GridPane.rowIndex="3" />
       <Button fx:id="but22" mnemonicParsing="false" onAction="#press22" text="Play Here" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+       -->
+       <Button fx:id="but20" mnemonicParsing="false" onAction="#press" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+       <Button fx:id="but10" mnemonicParsing="false" onAction="#press" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+       <Button fx:id="but00" mnemonicParsing="false" onAction="#press" text="Play Here" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+       <Button fx:id="but01" mnemonicParsing="false" onAction="#press" text="Play Here" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+       <Button fx:id="but02" mnemonicParsing="false" onAction="#press" text="Play Here" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+       <Button fx:id="but11" mnemonicParsing="false" onAction="#press" text="Play Here" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+       <Button fx:id="but21" mnemonicParsing="false" onAction="#press" text="Play Here" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+       <Button fx:id="but12" mnemonicParsing="false" onAction="#press" text="Play Here" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+       <Button fx:id="but22" mnemonicParsing="false" onAction="#press" text="Play Here" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+
       <Line endX="600.0" GridPane.rowIndex="2" />
       <Line endX="600.0" GridPane.rowIndex="4" />
       <Line endY="340.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
       <Line endY="340.0" GridPane.columnIndex="4" GridPane.rowIndex="3" />
-      <Label fx:id="text00" text="Blank" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
-      <Label fx:id="text10" text="Blank" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
-      <Label fx:id="text20" text="Blank" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
-      <Label fx:id="text01" text="Blank" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
-      <Label fx:id="text11" text="Blank" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
-      <Label fx:id="text21" text="Blank" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
-      <Label fx:id="text02" text="Blank" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
-      <Label fx:id="text12" text="Blank" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
-      <Label fx:id="text22" text="Blank" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+      <Label fx:id="text00" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+      <Label fx:id="text10" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+      <Label fx:id="text20" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+      <Label fx:id="text01" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+      <Label fx:id="text11" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+      <Label fx:id="text21" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+      <Label fx:id="text02" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+      <Label fx:id="text12" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+      <Label fx:id="text22" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
       <Label fx:id="p1label" text="Player 1" GridPane.columnIndex="1">
          <font>
             <Font name="System Bold" size="24.0" />
