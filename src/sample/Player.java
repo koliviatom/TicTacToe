@@ -16,17 +16,15 @@ public class Player {
     }
 
     public void setName(String name) throws IllegalTic {
-        if (name.length() > 12)
+        if (name.length() > 20)
             throw new IllegalTic("Name too long!");
         this.name = name;
     }
 
-    public int getMarker() {
-        return marker;
-    }
+    public char getMarker() { return marker; }
 
     public void setMarker(char m) throws IllegalTic {
-        if (m != 'o' || m != 'x')
+        if (m != 'O' && m != 'X')
             throw new IllegalTic("Illegal marker option!");
         marker = m;
     }
