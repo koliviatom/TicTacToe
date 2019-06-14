@@ -53,6 +53,6 @@
          </toggleGroup>
       </RadioButton>
       <RadioButton fx:id="twoPlayerOpt" mnemonicParsing="false" text="Two Players" toggleGroup="$selectPlayers" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
-      <Button fx:id="confirmPlayers" mnemonicParsing="false" prefWidth="300.0" text="Confirm" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+      <Button fx:id="confirmPlayers" mnemonicParsing="false" onAction="#confirmPlayersPressed" prefWidth="300.0" text="Confirm" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
    </children>
 </GridPane>
