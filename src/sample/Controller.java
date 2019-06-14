@@ -4,6 +4,9 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.RadioButton;
+import javafx.scene.control.TextField;
+import javafx.scene.control.ToggleGroup;
 
 public class Controller {
 
@@ -27,6 +30,21 @@ public class Controller {
     GamePlay game = new GamePlay(playx, playo, board);
     Button butpressed;
 
+    //Starter Screen
+    @FXML
+    private RadioButton twoPlayerOpt;
+    @FXML
+    private ToggleGroup selectPlayers;
+    @FXML
+    private TextField p2Name;
+    @FXML
+    private TextField p1Name;
+    @FXML
+    private RadioButton onePlayerOpt;
+    @FXML
+    private Button confirmPlayers;
+
+    //Main Screen
     @FXML
     private Button but20;
     @FXML
