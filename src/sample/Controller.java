@@ -4,29 +4,27 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.RadioButton;
+import javafx.scene.control.TextField;
+import javafx.scene.control.ToggleGroup;
 
 public class Controller {
 
-    Player playx;
-    {
-        try {
-            playx = new Player("playerx",'X',true);
-        } catch (IllegalTic illegalTic) {
-            illegalTic.printStackTrace();
-        }
-    }
-    Player playo;
-    {
-        try {
-            playo = new Player("playero",'O',false);
-        } catch (IllegalTic illegalTic) {
-            illegalTic.printStackTrace();
-        }
-    }
-    Board board = new Board();
-    GamePlay game = new GamePlay(playx, playo, board);
-    Button butpressed;
+    //Starter Screen
+    @FXML
+    private RadioButton twoPlayerOpt;
+    @FXML
+    private ToggleGroup selectPlayers;
+    @FXML
+    private TextField p2Name;
+    @FXML
+    private TextField p1Name;
+    @FXML
+    private RadioButton onePlayerOpt;
+    @FXML
+    private Button confirmPlayers;
 
+    //Main Screen
     @FXML
     private Button but20;
     @FXML
@@ -68,11 +66,46 @@ public class Controller {
     @FXML
     private Button but21;
 
+    //Starter Screen
+
     @FXML
     void initialize() throws IllegalTic {
+        selectPlayers.selectedToggleProperty().addListener((ov, old_toggle, new_toggle) -> {
+
+        });
+
+
+
+
         p1label.setText(playx.getName());
         p2label.setText(playo.getName());
     }
+
+    //Main Screen
+
+    Player playx;
+    {
+        try {
+            playx = new Player("playerx",'X',true);
+        } catch (IllegalTic illegalTic) {
+            illegalTic.printStackTrace();
+        }
+    }
+    Player playo;
+    {
+        try {
+            playo = new Player("playero",'O',false);
+        } catch (IllegalTic illegalTic) {
+            illegalTic.printStackTrace();
+        }
+    }
+    Board board = new Board();
+    GamePlay game = new GamePlay(playx, playo, board);
+    Button butpressed;
+
+
+
+
 
     @FXML
     void press (ActionEvent event) {
