@@ -70,12 +70,6 @@ public class Controller {
 
     @FXML
     void initialize() throws IllegalTic {
-        selectPlayers.selectedToggleProperty().addListener((ov, old_toggle, new_toggle) -> {
-
-        });
-
-
-
 
         p1label.setText(playx.getName());
         p2label.setText(playo.getName());
