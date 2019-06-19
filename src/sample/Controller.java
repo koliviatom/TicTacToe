@@ -71,6 +71,7 @@ public class Controller {
     @FXML
     void initialize() throws IllegalTic {
 
+
         p1label.setText(playx.getName());
         p2label.setText(playo.getName());
     }
