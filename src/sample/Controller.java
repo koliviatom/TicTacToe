@@ -71,7 +71,6 @@ public class Controller {
     @FXML
     void initialize() throws IllegalTic {
 
-
         p1label.setText(playx.getName());
         p2label.setText(playo.getName());
     }
@@ -96,30 +95,41 @@ public class Controller {
     }
     Board board = new Board();
     GamePlay game = new GamePlay(playx, playo, board);
+
+
     Button butpressed;
-
-
-
-
-
     @FXML
     void press (ActionEvent event) {
+        //scape id for button location
         butpressed = (Button)event.getTarget();
         int row = Integer.parseInt(butpressed.getId().substring(3,4));
         int col= Integer.parseInt(butpressed.getId().substring(4,5));
 
+        //if empty, place marker
         if(!board.isSpaceOccupied(row,col)) {
             char mark = game.getCurrentMarker();
             butpressed.setText(Character.toString(mark));
             board.updateBoard(row,col,mark);
             butpressed.setDisable(true);
         }
-        if(board.checkForWinner()) {
-            p1label.setText("WINNER!");
-            p2label.setText("LOSER!");
-        }
+        winnerCheck();
         game.swapPlayers();
         swapPlayerFocus();
+    }
+
+    void winnerCheck() {
+        if(board.checkForWinner()) {
+            if(game.playersTurn(playx)) {
+                p1label.setText("WINNER!");
+                p1label.setStyle("-fx-font-weight: bold");
+                p2label.setText("LOSER!");
+            } else {
+                p2label.setText("WINNER!");
+                p2label.setStyle("-fx-font-weight: bold");
+                ;
+                p1label.setText("LOSER!");
+            }
+        }
     }
 
     void swapPlayerFocus(){

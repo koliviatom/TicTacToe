@@ -11,8 +11,12 @@ public class GamePlay {
         this.gameboard = board;
     }
 
+    public boolean playersTurn(Player p) {
+        return p.getTurn();
+    }
+
     public void swapPlayers() {
-        if(p1.getTurn()) {
+        if(playersTurn(p1)) {
             p1.setTurn(false);
             p2.setTurn(true);
         } else {

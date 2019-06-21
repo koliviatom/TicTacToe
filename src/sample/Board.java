@@ -15,15 +15,15 @@ public class Board {
         return gameBoard;
     }
 
+    public char[][] updateBoard(int row, int col, char marker) {
+        gameBoard[row][col] = marker;
+        return gameBoard;
+    }
+
     public boolean isSpaceOccupied(int row, int col) {
         if (gameBoard[row][col] == 'X' || gameBoard[row][col] == 'O')
             return true;
         return false;
-    }
-
-    public char[][] updateBoard(int row, int col, char marker) {
-        gameBoard[row][col] = marker;
-        return gameBoard;
     }
 
     public boolean checkForWinner( ) {
