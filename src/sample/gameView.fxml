@@ -26,31 +26,35 @@
       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
   </rowConstraints>
    <children>
-       <!--
-      <Button fx:id="but20" mnemonicParsing="false" onAction="#press20" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-      <Button fx:id="but10" mnemonicParsing="false" onAction="#press10" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-      <Button fx:id="but00" mnemonicParsing="false" onAction="#press00" text="Play Here" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-      <Button fx:id="but01" mnemonicParsing="false" onAction="#press01" text="Play Here" GridPane.columnIndex="3" GridPane.rowIndex="1" />
-      <Button fx:id="but02" mnemonicParsing="false" onAction="#press02" text="Play Here" GridPane.columnIndex="5" GridPane.rowIndex="1" />
-      <Button fx:id="but11" mnemonicParsing="false" onAction="#press11" text="Play Here" GridPane.columnIndex="3" GridPane.rowIndex="3" />
-      <Button fx:id="but21" mnemonicParsing="false" onAction="#press21" text="Play Here" GridPane.columnIndex="3" GridPane.rowIndex="5" />
-      <Button fx:id="but12" mnemonicParsing="false" onAction="#press12" text="Play Here" GridPane.columnIndex="5" GridPane.rowIndex="3" />
-      <Button fx:id="but22" mnemonicParsing="false" onAction="#press22" text="Play Here" GridPane.columnIndex="5" GridPane.rowIndex="5" />
-       -->
-       <Button fx:id="but20" minHeight="80.0" minWidth="125.0" mnemonicParsing="false" onAction="#press" text="Button" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="6" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
-       <Button fx:id="but10" minHeight="80.0" minWidth="125.0" mnemonicParsing="false" onAction="#press" text="Button" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
-       <Button fx:id="but00" minHeight="80.0" minWidth="125.0" mnemonicParsing="false" onAction="#press" text="Play Here" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
-       <Button fx:id="but01" minHeight="80.0" minWidth="125.0" mnemonicParsing="false" onAction="#press" text="Play Here" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
-       <Button fx:id="but02" minHeight="80.0" minWidth="125.0" mnemonicParsing="false" onAction="#press" text="Play Here" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
-       <Button fx:id="but11" minHeight="80.0" minWidth="125.0" mnemonicParsing="false" onAction="#press" text="Play Here" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
-       <Button fx:id="but21" minHeight="80.0" minWidth="125.0" mnemonicParsing="false" onAction="#press" text="Play Here" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="6" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
-       <Button fx:id="but12" minHeight="80.0" minWidth="125.0" mnemonicParsing="false" onAction="#press" text="Play Here" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
-       <Button fx:id="but22" minHeight="80.0" minWidth="125.0" mnemonicParsing="false" onAction="#press" text="Play Here" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="6" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
-
-      <Line endX="600.0" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.vgrow="NEVER" />
-      <Line endX="600.0" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" GridPane.vgrow="NEVER" />
-      <Line endY="340.0" GridPane.columnIndex="2" GridPane.hgrow="NEVER" GridPane.rowIndex="1" GridPane.rowSpan="2147483647" GridPane.valignment="CENTER" />
-      <Line endY="340.0" GridPane.columnIndex="4" GridPane.hgrow="NEVER" GridPane.rowIndex="1" GridPane.rowSpan="2147483647" GridPane.valignment="CENTER" />
+      <Pane fx:id="gridWrap" GridPane.rowIndex="1">
+         <children>
+             <Button fx:id="but12" layoutX="438.0" layoutY="149.0" minHeight="80.0" minWidth="125.0" mnemonicParsing="false" onAction="#press" text="Play Here" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+             <Button fx:id="but02" layoutX="438.0" layoutY="27.0" minHeight="80.0" minWidth="125.0" mnemonicParsing="false" onAction="#press" text="Play Here" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+            <Line endX="600.0" layoutY="244.0" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" GridPane.vgrow="NEVER" />
+             <Button fx:id="but01" layoutX="238.0" layoutY="27.0" minHeight="80.0" minWidth="125.0" mnemonicParsing="false" onAction="#press" text="Play Here" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+             <Button fx:id="but10" layoutX="38.0" layoutY="149.0" minHeight="80.0" minWidth="125.0" mnemonicParsing="false" onAction="#press" text="Button" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+             <!--
+            <Button fx:id="but20" mnemonicParsing="false" onAction="#press20" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Button fx:id="but10" mnemonicParsing="false" onAction="#press10" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button fx:id="but00" mnemonicParsing="false" onAction="#press00" text="Play Here" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="but01" mnemonicParsing="false" onAction="#press01" text="Play Here" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Button fx:id="but02" mnemonicParsing="false" onAction="#press02" text="Play Here" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+            <Button fx:id="but11" mnemonicParsing="false" onAction="#press11" text="Play Here" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Button fx:id="but21" mnemonicParsing="false" onAction="#press21" text="Play Here" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <Button fx:id="but12" mnemonicParsing="false" onAction="#press12" text="Play Here" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+            <Button fx:id="but22" mnemonicParsing="false" onAction="#press22" text="Play Here" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+             -->
+             <Button fx:id="but20" layoutX="38.0" layoutY="252.0" minHeight="80.0" minWidth="125.0" mnemonicParsing="false" onAction="#press" text="Button" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="6" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+            <Line endY="340.0" layoutX="400.0" GridPane.columnIndex="4" GridPane.hgrow="NEVER" GridPane.rowIndex="1" GridPane.rowSpan="2147483647" GridPane.valignment="CENTER" />
+      
+            <Line endX="600.0" layoutY="133.0" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.vgrow="NEVER" />
+             <Button fx:id="but22" layoutX="438.0" layoutY="252.0" minHeight="80.0" minWidth="125.0" mnemonicParsing="false" onAction="#press" text="Play Here" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="6" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+             <Button fx:id="but00" layoutX="38.0" layoutY="27.0" minHeight="80.0" minWidth="125.0" mnemonicParsing="false" onAction="#press" text="Play Here" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+             <Button fx:id="but21" layoutX="238.0" layoutY="252.0" minHeight="80.0" minWidth="125.0" mnemonicParsing="false" onAction="#press" text="Play Here" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="6" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+            <Line endY="340.0" layoutX="200.0" GridPane.columnIndex="2" GridPane.hgrow="NEVER" GridPane.rowIndex="1" GridPane.rowSpan="2147483647" GridPane.valignment="CENTER" />
+             <Button fx:id="but11" layoutX="238.0" layoutY="149.0" minHeight="80.0" minWidth="125.0" mnemonicParsing="false" onAction="#press" text="Play Here" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+         </children>
+      </Pane>
       <Label fx:id="p1label" text="Player 1" GridPane.columnSpan="3" GridPane.halignment="CENTER">
          <font>
             <Font size="24.0" />
