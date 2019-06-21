@@ -7,6 +7,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
 import javafx.scene.control.ToggleGroup;
+import javafx.scene.layout.Pane;
 
 public class Controller {
 
@@ -25,6 +26,8 @@ public class Controller {
     private Button confirmPlayers;
 
     //Main Screen
+    @FXML
+    private Pane gridWrap;
     @FXML
     private Button but20;
     @FXML
@@ -112,23 +115,24 @@ public class Controller {
             board.updateBoard(row,col,mark);
             butpressed.setDisable(true);
         }
-        winnerCheck();
-        game.swapPlayers();
-        swapPlayerFocus();
+        if (board.checkForWinner())
+            winnerCheck();
+        else {
+            game.swapPlayers();
+            swapPlayerFocus();
+        }
     }
 
     void winnerCheck() {
         if(board.checkForWinner()) {
             if(game.playersTurn(playx)) {
                 p1label.setText("WINNER!");
-                p1label.setStyle("-fx-font-weight: bold");
                 p2label.setText("LOSER!");
             } else {
                 p2label.setText("WINNER!");
-                p2label.setStyle("-fx-font-weight: bold");
-                ;
                 p1label.setText("LOSER!");
             }
+            endGame();
         }
     }
 
@@ -142,6 +146,9 @@ public class Controller {
         }
     }
 
+    void endGame() {
+        gridWrap.setDisable(true);
+    }
 
     /* Individual button handlers
     @FXML
